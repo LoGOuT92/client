@@ -10,15 +10,15 @@ export function Articules() {
         <SingleArticule />
       </div>
       <div className={styles.smallArticules}>
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
-        <SingleArticule smallArticule="test" />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
+        <SingleArticule smallArticule />
       </div>
     </section>
   );
