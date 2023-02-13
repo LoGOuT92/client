@@ -1,0 +1,113 @@
+.header{
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    position: fixed;
+    padding: 10px calc(7% + 1px) 10px calc(7% + 1px);
+    top: 0;
+    transition: all 0.3s;
+    width: 100%;
+    z-index: 50;
+    &.background{
+        background-color: rgb(18, 18, 18);
+    }
+    .buttonsContainer{
+        display: flex;
+        margin-left: auto;
+    }
+    .buttonLogin{
+        align-items: center;
+        border-radius: 10px;
+        background: transparent;
+        display: flex;
+        height: 35px;
+        justify-content: center;
+        overflow: hidden;
+        position: relative; 
+        width: 80px;
+    }
+    .buttonLogin::before{
+        animation: animate 4s linear infinite;
+        background-image: conic-gradient(transparent,transparent,transparent,black);
+        content: " ";
+        height: 150px;
+        position: absolute;
+        width: 150px;
+    }
+    .buttonLogin.background::before{
+        background-image: conic-gradient(transparent,transparent,transparent,red);
+    }
+    .buttonLogin button{
+        color: black;
+        cursor: pointer;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        font-weight: 600;
+        outline: none;
+        position: absolute;
+        transition: all .3s;
+        inset: 3px;
+        &:hover{
+            color: rgb(255, 0, 0);
+            background: rgb(0, 0, 0);   
+        }
+    }
+    img{
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            transform: scale(1.1);
+            
+        }
+    }
+    .ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-left: 40px;
+        list-style: none;
+        li{
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-bottom-left-radius: 10px;
+            cursor: pointer;
+            padding: 5px;
+            text-align: center;
+            transition: all .3s;
+            width: 70px;
+            
+            &:hover{
+                border: 2px solid black;
+                border-radius: 10px;
+                transform: scale(1.2);
+                -webkit-box-shadow: 0px 0px 24px 0px rgba(249, 4, 4, 1);
+                -moz-box-shadow: 0px 0px 24px 0px rgba(249, 4, 4, 1);
+                box-shadow: 0px 0px 24px 0px rgba(249, 4, 4, 1);
+            }
+        }
+        &.background{
+            li{
+                border-color: red;
+
+            }
+        }
+    }
+    @keyframes animate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+@media (max-width: 900px) {
+    .header{
+    .ul{
+        display: none;
+    }
+    }
+  }

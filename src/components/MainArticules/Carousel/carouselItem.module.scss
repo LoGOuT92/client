@@ -1,0 +1,111 @@
+.carouselItem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    .carouselImg {
+        display: inline-block;
+        max-inline-size: 100%;
+        block-size: auto;  
+      }
+      .mainArticulesContent{
+        padding: 5px;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 15%;
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.21);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.4px);
+        -webkit-backdrop-filter: blur(2.4px);
+        h2{
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .mainArticulesContentLink{
+            
+            background-color: rgb(201, 36, 13);
+            border: 2px solid transparent;
+            cursor: pointer;
+            line-height: 1;
+            align-items: center;
+            text-transform: uppercase;
+            color: white;
+            border-radius: 2px;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s ease-in 0s, color 0.3s ease-in 0s, border 0.3s ease-in 0s;
+            &:hover{
+                background-color: transparent;
+                border-color: rgb(201, 36, 13);
+            }
+        }
+    }
+  }
+  @media (max-width: 1100px) {
+    .carouselItem {
+          .mainArticulesContent{
+            h2{
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+      }
+  }
+  @media (max-width: 900px) {
+    .carouselItem {
+        border: 1px solid blue;
+          .mainArticulesContent{
+            padding: 5px;
+            h2{
+                font-size: 12px;
+                margin-bottom: 5px;
+                font-weight: 900;
+            }
+            p{
+                font-size: 10px;
+            }
+            .mainArticulesContentLink{
+                padding: 5px;
+                font-size: 12px;
+            }
+        }
+      }
+  }
+  @media (max-width: 400px) {
+    .carouselItem {
+
+        border: 1px solid red;
+          .mainArticulesContent{
+            padding: 5px;
+            h2{
+                display: flex;
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 8px;
+            }
+            .mainArticulesContentLink{
+                padding: 2px;
+                font-size: 10px;
+                &:hover{
+                    background-color: transparent;
+                    border-color: rgb(201, 36, 13);
+                }
+            }
+        }
+      }
+  }
