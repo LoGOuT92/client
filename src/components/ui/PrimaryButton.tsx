@@ -2,7 +2,7 @@ import styles from "../../styles/primaryButton.module.scss";
 
 interface Props {
   title: string;
-  color?: string | "white";
+  color?: string;
   width?: number;
   height?: number;
   type?: "button" | "submit" | "reset" | undefined;
