@@ -23,6 +23,7 @@ module.exports = {
       "assets-eu-01.kc-usercontent.com",
       "storage.googleapis.com",
       "www.acmilan.com",
+      "localhost",
     ],
   },
 };
