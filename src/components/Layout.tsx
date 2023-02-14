@@ -7,9 +7,9 @@ interface ILayoutProps {
 
 export function Layout({ children }: ILayoutProps) {
   return (
-    <div>
+    <>
       <Header />
       <Wrapper>{children}</Wrapper>
-    </div>
+    </>
   );
 }
