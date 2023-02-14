@@ -1,0 +1,38 @@
+.postContainer{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+.postContentConatainer{
+    max-width: 900px;
+    width: 100%;
+    .socialIcons{
+        padding: 20px 0px;
+        display: flex;
+        gap:20px;
+        img{
+            cursor: pointer;
+        }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        p{
+            margin-top:20px;
+            line-height: 1.5;
+        
+        }
+        .author{
+            padding: 5px 0;
+            margin-left: auto;
+        }
+    }
+}
+.commentsContainer{
+    max-width: 900px;
+    width: 100%;
+    textarea{
+        width: 100%;
+    }
+}
+}

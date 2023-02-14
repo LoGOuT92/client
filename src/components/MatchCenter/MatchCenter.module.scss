@@ -1,11 +1,10 @@
 .MatchCenterContainer{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
     width: 100%;
     h2{
         text-align: center;
-        padding:5px;
+        padding:15px;
     }
     .MatchCenter{
         align-items: center;
@@ -13,6 +12,6 @@
         flex:1;  
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-top: 20px;
+        gap: 20px;
     }
 }

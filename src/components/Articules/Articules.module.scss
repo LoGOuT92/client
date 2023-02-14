@@ -1,21 +1,19 @@
 .articulesContainer{
-    margin-top: 60px;
-    width:90%;
     max-width: 1280px;
     h2{
         text-align: center;
+        padding: 15px;
     }
     .articules{
-        margin-top: 50px;
         flex:1;
         justify-content: center;
-        gap:10px;
+        gap:30px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
     .smallArticules{
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
         gap:30px;
         justify-content: center;
