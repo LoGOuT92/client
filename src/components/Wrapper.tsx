@@ -4,5 +4,9 @@ interface IWrapperProps {
 }
 
 export function Wrapper({ children }: IWrapperProps) {
-  return <div className={styles.wrapper}>{children}</div>;
+  return (
+    <div className={styles.wrapperContainer}>
+      <div className={styles.wrapper}>{children}</div>
+    </div>
+  );
 }
