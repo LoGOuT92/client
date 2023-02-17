@@ -10,7 +10,7 @@ export default function register() {
       <div className={styles.loginContainer}>
         <Image
           src="https://www.acmilan.com/images/logo.png"
-          alt=""
+          alt="Milan logo"
           width={75}
           height={150}
         />

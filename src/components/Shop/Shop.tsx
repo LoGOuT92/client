@@ -18,6 +18,7 @@ export function Shop() {
             <PrimaryButton title="BUY NOW" color="red" />
           </div>
         </div>
+
         <div className={styles.shopItem}>
           <Image
             width={300}
@@ -29,6 +30,7 @@ export function Shop() {
             <PrimaryButton title="BUY NOW" color="red" />
           </div>
         </div>
+
         <div className={styles.shopItem}>
           <Image
             width={300}

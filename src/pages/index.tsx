@@ -8,6 +8,7 @@ import { MatchCenter } from "@/components/MatchCenter/MatchCenter";
 import { Articules } from "@/components/Articules/Articules";
 import { Shop } from "@/components/Shop/Shop";
 import { MobileApp } from "@/components/MobileApp/MobileApp";
+import { Footer } from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -41,6 +42,8 @@ export default function Home() {
           />
         </main>
       </Wrapper>
+
+      <Footer />
     </>
   );
 }

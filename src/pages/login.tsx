@@ -12,7 +12,7 @@ export default function login() {
       <div className={styles.loginContainer}>
         <Image
           src="https://www.acmilan.com/images/logo.png"
-          alt=""
+          alt="Milan Logo"
           width={75}
           height={150}
         />
@@ -21,6 +21,7 @@ export default function login() {
           <InputField title="Password" type="password" placeholder="Password" />
           <PrimaryButton title="Login" type="submit" />
         </form>
+
         <Link href="/register">
           <div className={styles.registerOption}>Not registered? Join us</div>
         </Link>
