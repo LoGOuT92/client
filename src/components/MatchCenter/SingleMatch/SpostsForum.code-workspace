@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../../.."
+		},
+		{
+			"path": "../../../../../../Backhend"
+		},
+		{
+			"path": "../../../../../../Frontend/frontend"
+		},
+		{
+			"path": "../../../../../../netflix-clone"
+		}
+	],
+	"settings": {}
+}
