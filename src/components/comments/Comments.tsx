@@ -7,9 +7,9 @@ export function Comments() {
       <div className={styles.mainComment}>
         <SingleComment />
         <div className={styles.replyComment}>
-          <SingleComment />
-          <SingleComment />
-          <SingleComment />
+          <SingleComment isReplyComment />
+          <SingleComment isReplyComment />
+          <SingleComment isReplyComment />
         </div>
       </div>
 
@@ -23,9 +23,9 @@ export function Comments() {
       <div className={styles.mainComment}>
         <SingleComment />
         <div className={styles.replyComment}>
-          <SingleComment />
-          <SingleComment />
-          <SingleComment />
+          <SingleComment isReplyComment />
+          <SingleComment isReplyComment />
+          <SingleComment isReplyComment />
         </div>
       </div>
       <div className={styles.mainComment}>
