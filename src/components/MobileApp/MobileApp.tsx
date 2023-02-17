@@ -16,8 +16,15 @@ export function MobileApp({
   return (
     <section className={styles.mobileAppContainer}>
       <h2>{title}</h2>
+
       <div style={{ marginTop: "30px", border: "2px solid white" }}>
-        <Image width={1140} height={445} alt="" src={img} />
+        <Image
+          width={1140}
+          height={445}
+          alt="Mobile aplication banner"
+          src={img}
+        />
+
         <div className={styles.mobileAppContent}>
           <h2>{title}</h2>
           <p>{paragraph}</p>
