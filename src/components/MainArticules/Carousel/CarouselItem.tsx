@@ -9,7 +9,11 @@ interface item {
 export function CarouselItem({ item }: { item: item }) {
   return (
     <div className={styles.carouselItem}>
-      <img className={styles.carouselImg} src={item.image} alt="" />
+      <img
+        className={styles.carouselImg}
+        src={item.image}
+        alt="Articule image"
+      />
       <div className={styles.mainArticulesContent}>
         <div>
           <h2>{item.title}</h2>
