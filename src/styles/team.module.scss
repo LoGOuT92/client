@@ -1,0 +1,21 @@
+.TeamContainer{
+    .playerRow{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        margin-top:15px;
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+            font-weight: 900;
+        }
+        .playerT{
+            display: flex;
+            flex-wrap: wrap;
+            align-items:center;
+            gap: 15px;
+    
+        }
+    }
+}
