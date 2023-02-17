@@ -1,3 +1,4 @@
+import { Footer } from "./Footer/Footer";
 import { Header } from "./Header/Header";
 import { Wrapper } from "./Wrapper";
 
@@ -10,6 +11,7 @@ export function Layout({ children }: ILayoutProps) {
     <>
       <Header />
       <Wrapper>{children}</Wrapper>
+      <Footer />
     </>
   );
 }
