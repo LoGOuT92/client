@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -20,20 +21,29 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`${styles.header} ${isScrolled && styles.background}`}>
+    <header
+      className={`${styles.headerContainer} ${isScrolled && styles.background}`}
+    >
       <Link href="/">
         <Image
           src="https://i.ibb.co/TYVJ3S4/milan.png"
-          alt="milan"
+          alt="Milan Logo and back to home page button"
           width={75}
           height={75}
         />
       </Link>
-      <ul className={`${styles.ul} ${isScrolled && styles.background}`}>
+
+      <ul
+        className={`${styles.navigationContainer} ${
+          isScrolled && styles.background
+        }`}
+      >
         <li>
-          <Link href="/history">Historia</Link>
+          <Link href="/history">History</Link>
         </li>
-        <li>Kadra</li>
+        <li>
+          <Link href="/team">Team</Link>
+        </li>
         <li>Zapisy</li>
         <li>Trofea</li>
       </ul>
@@ -42,8 +52,9 @@ export function Header() {
         <div
           className={`${styles.buttonLogin} ${isScrolled && styles.background}`}
         >
-          <button>Profil</button>
+          <button>Profile</button>
         </div>
+
         <div
           className={`${styles.buttonLogin} ${isScrolled && styles.background}`}
         >
