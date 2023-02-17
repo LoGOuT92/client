@@ -1,12 +1,17 @@
+import { NEXT_PUBLIC_API } from "../../../../path";
 import styles from "./SingleComment.module.scss";
 import Image from "next/image";
 
-export function SingleComment() {
+interface Iprops {
+  isReplyComment?: boolean;
+}
+
+export function SingleComment({ isReplyComment }: Iprops) {
   return (
     <div className={styles.singleCommentContainer}>
-      <div className={styles.commentUserInfo}>
+      <div className={styles.commentUserAvatar}>
         <Image
-          src="http://localhost:3001/public/uploads/1639801040653.jpg"
+          src={`${NEXT_PUBLIC_API}/public/uploads/1639801040653.jpg`}
           alt="User avatar"
           width={70}
           height={70}
@@ -14,7 +19,7 @@ export function SingleComment() {
       </div>
 
       <div className={styles.commentContent}>
-        <label className={styles.commentDateInfo}>
+        <label className={styles.commentUserAndDateDetali}>
           <label>
             <strong>username</strong>
           </label>
@@ -26,7 +31,8 @@ export function SingleComment() {
           <label>coment body body bdycoment</label>
         </div>
       </div>
-      <label className={styles.commentButtons}>
+
+      <label className={styles.commentsButtonsContainer}>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +40,6 @@ export function SingleComment() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            style={{ color: "white", width: "20px" }}
           >
             <path
               strokeLinecap="round"
@@ -43,7 +48,7 @@ export function SingleComment() {
             />
           </svg>
         </span>
-        <span>10</span>
+        <span className={styles.likesCount}>0</span>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +56,6 @@ export function SingleComment() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            style={{ color: "white", width: "20px" }}
           >
             <path
               strokeLinecap="round"
@@ -60,7 +64,7 @@ export function SingleComment() {
             />
           </svg>
         </span>
-        <span style={{ fontSize: "13px" }}>Odpowiedz</span>
+        {!isReplyComment && <span className={styles.addReply}>Reply</span>}
       </label>
     </div>
   );
