@@ -29,3 +29,10 @@ export interface Comment{
     time: string;
     user:User
 }
+export interface Iplayer{
+    Name: string;
+    Number:number;
+    Positions: string;
+    SurName:string;
+    _id:string;
+}
