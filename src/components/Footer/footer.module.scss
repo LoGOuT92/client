@@ -1,0 +1,18 @@
+.footerContainer{
+    min-height: 70vh;
+    background-color:black;
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 200px;
+    .image{
+        position: absolute;
+        width: max-content;
+        top:-110px;
+    }
+    span{
+        font-size: 24px;
+        font-weight: 900;
+    }
+}
