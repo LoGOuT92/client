@@ -7,7 +7,7 @@ export default function SingleMatch({ type }: { type: string }) {
       <div className={styles.SingleMatchContent}>
         <div className={styles.SingleTeam}>
           <Image
-            alt=""
+            alt="Home team logo"
             src="https://storage.googleapis.com/static-production.netcosports.com/directv/OPTA_LOGOS/120.png"
             width={90}
             height={90}
@@ -17,7 +17,7 @@ export default function SingleMatch({ type }: { type: string }) {
         <span>2-1</span>
         <div className={styles.SingleTeam}>
           <Image
-            alt=""
+            alt="Away team logo"
             src="https://storage.googleapis.com/static-production.netcosports.com/directv/OPTA_LOGOS/121.png"
             width={90}
             height={90}
